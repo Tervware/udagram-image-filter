@@ -37,7 +37,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
         return res.status(422).send('Image url is required');
       }
       filteredpath = await filterImageFromURL(image_url);
-     return res.sendFile(filteredpath);
+     return res.status(200).sendFile(filteredpath);
     } catch (error) {
       return res.status(400).send({status: 'error', message: "An error occured while filtering Image" });
     } finally{
@@ -53,7 +53,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   // Root Endpoint
   // Displays a simple message to the user
   app.get( "/", async ( req, res ) => {
-    res.send("try GET /filteredimage?image_url={{}}")
+    return res.status(200).send("try GET /filteredimage?image_url={{}}")
   } );
   
 
