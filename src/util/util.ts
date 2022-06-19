@@ -11,8 +11,8 @@ import Jimp from 'jimp';
 export async function filterImageFromURL(inputURL: string): Promise<string> {
   return new Promise(async (resolve, reject) => {
     try {
-      const photo = await Jimp.read(inputURL);
-      const outpath =
+      const photo: Jimp = await Jimp.read(inputURL);
+      const outpath: string =
         "/tmp/filtered." + Math.floor(Math.random() * 2000) + ".jpg";
       await photo
         .resize(256, 256) // resize
@@ -32,7 +32,7 @@ export async function filterImageFromURL(inputURL: string): Promise<string> {
 // useful to cleanup after tasks
 // INPUTS
 //    files: Array<string> an array of absolute paths to files
-export async function deleteLocalFiles(files: Array<string>) {
+export async function deleteLocalFiles(files: Array<string>): Promise<void> {
   for (let file of files) {
     fs.unlinkSync(file);
   }
