@@ -6,7 +6,9 @@ The project is split into three parts:
 1. [The Simple Frontend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-frontend)
 A basic Ionic client web application which consumes the RestAPI Backend. [Covered in the course]
 2. [The RestAPI Backend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-restapi), a Node-Express server which can be deployed to a cloud service. [Covered in the course]
-3. [The Image Filtering Microservice](https://github.com/Tervware/udagram-image-filter), the final project for the course. It is a Node-Express application which runs a simple script to process images. [Click http://terver-udagram-image-filter-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://cdn.pixabay.com/photo/2020/04/12/12/27/fota-5034051_960_720.jpg to try it out.](http://terver-udagram-image-filter-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://cdn.pixabay.com/photo/2020/04/12/12/27/fota-5034051_960_720.jpg)
+3. [The Image Filtering Microservice](https://github.com/Tervware/udagram-image-filter), the final project for the course. It is a Node-Express application which runs a simple script to process images. 
+The live link is [http://terver-udagram-image-filter-dev.us-east-1.elasticbeanstalk.com](http://terver-udagram-image-filter-dev.us-east-1.elasticbeanstalk.com).
+[Click here to try it out.](http://terver-udagram-image-filter-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://cdn.pixabay.com/photo/2020/05/15/16/15/nature-5174118_960_720.jpg)
 
 ## Tasks
 
